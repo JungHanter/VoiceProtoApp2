@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/main_btn_teachName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="이름 가르치기" />
+    
+    <Button
+        android:id="@+id/main_btn_teach"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="가르치기" />
+
+    <Button
+        android:id="@+id/main_btn_communicate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="소통하기" />
+	
+	<Button
+        android:id="@+id/main_btn_patternList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="가르친 리스트 보기" />
+    
+</LinearLayout>

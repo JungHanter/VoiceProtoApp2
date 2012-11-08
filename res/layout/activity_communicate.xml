@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentBottom="true"
+	    android:layout_above="@+id/actCommu_layout_voice" >
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Result : "
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <TextView
+	        android:id="@+id/actCommu_txt_result"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="None" />
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dip" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Who : "
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <TextView
+	            android:id="@+id/actCommu_txt_Who"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="None"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dip" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Actions : "
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <TextView
+	            android:id="@+id/actCommu_txt_Action"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="None"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    </LinearLayout>
+	</LinearLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/actCommu_layout_voice"
+        android:layout_width="fill_parent"
+		android:layout_height="84dp"
+		android:background="#FF444444"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true" >
+		
+        <TextView
+		    android:id="@+id/actCommu_text_info"
+		    android:text="idle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="4dip"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true" />
+        
+		<ProgressBar
+		    android:id="@+id/actCommu_progress_recog"
+			android:layout_width="32dp"
+			android:layout_height="32dp"
+			android:layout_margin="4dip"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true" />
+		
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible">
+			<ImageView
+			    android:id="@+id/actCommu_img_mic"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:background="@drawable/mic" />
+			<ImageView
+			    android:id="@+id/actCommu_img_volume_left_1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@+id/actCommu_img_mic"
+				android:background="@drawable/volume_left_1"
+				android:visibility="visible" />
+			<ImageView
+			    android:id="@+id/actCommu_img_volume_left_2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@+id/actCommu_img_volume_left_1"
+				android:layout_marginRight="-3dp"
+				android:background="@drawable/volume_left_2"
+				android:visibility="visible" />
+			<ImageView
+			    android:id="@+id/actCommu_img_volume_left_3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@+id/actCommu_img_volume_left_2"
+				android:layout_marginRight="-12dp"
+				android:background="@drawable/volume_left_3"
+				android:visibility="visible" />
+			<ImageView
+			    android:id="@+id/actCommu_img_volume_right_1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@+id/actCommu_img_mic"
+				android:background="@drawable/volume_right_1"
+				android:visibility="visible" />
+			<ImageView
+			    android:id="@+id/actCommu_img_volume_right_2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@+id/actCommu_img_volume_right_1"
+				android:layout_marginLeft="-3dp"
+				android:background="@drawable/volume_right_2"
+				android:visibility="visible" />
+			<ImageView
+			    android:id="@+id/actCommu_img_volume_right_3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@+id/actCommu_img_volume_right_2"
+				android:layout_marginLeft="-12dp"
+				android:background="@drawable/volume_right_3"
+				android:visibility="visible" />
+		</RelativeLayout>
+	</RelativeLayout>
+	
+</RelativeLayout>

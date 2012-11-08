@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <TextView
+        android:id="@+id/dlgAnalResult_txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dip"
+        android:text="가르치기 결과"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="240dip"
+        android:background="#000000" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="음성인식 텍스트 형태소 분석 결과:"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/dlgAnalResult_txt_morphAnal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Sentence:
+안녕하세요
+-Analyze result:
+안녕/ii 
+하/px+세/ef+요/jfx" />
+            
+            <TextView
+                android:id="@+id/dlgAnalResult_txt_result_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="가르친 액션:"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <TextView 
+                android:id="@+id/dlgAnalResult_txt_result_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actions: 인사하기" />
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/dlgAnalResult_btn_close"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="닫기" />
+
+</LinearLayout>

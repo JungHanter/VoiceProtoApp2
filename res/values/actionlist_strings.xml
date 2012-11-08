@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actionList_strings">
+        <item>2: 밥 먹어</item>
+        <item>3: 쉬어</item>
+        <item>5: 잠 자</item>
+        <item>6: 일어나</item>
+        <item>1: 약 먹자</item>
+        <item>0: 이리 와</item>
+        <item>200: 놀아</item>
+        <item>101: 줄넘기 해</item>
+        <item>201: 그네 타</item>
+        <item>102: 런닝머신 해</item>
+        <item>100: 똥 치워</item>
+        <item>6: 그만</item>
+    </string-array>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <TextView
+        android:id="@+id/dlgMakeAnimal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:text="동물 이름을 입력하세요."
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/dlgMakeAnimal_edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="동물 이름" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/dlgMakeAnimal_btn_make"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="생성하기!" />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <TextView
+        android:id="@+id/dlgTeachTest_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:text="가르치기 텍스트 테스트"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/dlgTeachTest_edt_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:maxLines="5"
+        android:inputType="textMultiLine"
+        android:text="안녕하세요." >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/dlgTeachTest_btn_teach"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="가르치기" />
+
+</LinearLayout>
